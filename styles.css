@@ -96,14 +96,15 @@ h2 {
 }
 .project {
     overflow: hidden;
-    transition: .5s;
+    transition: .25s;
     border-radius: 0 0 10px 10px;
+    
 
 }
 
 .project:hover {
     transform: scale(1.03);
-    box-shadow: 0 0 10px gray;
+    box-shadow: 0 5px 10px black;
 }
 
 
@@ -118,6 +119,10 @@ h2 {
     #project-header {
         padding-top: 120px;
         padding-bottom: 50px;
+    }
+
+    h1 {
+        font-size: 5vw;
     }
 }
 
@@ -137,6 +142,9 @@ h2 {
         padding-top: 100px;
         padding-bottom: 30px;
     }
+    h1 {
+        font-size: 6vw;
+    }
    
 }
 
@@ -150,12 +158,23 @@ h2 {
     }
 
     #project-header h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
     
     #project-header {
         padding-top: 100px;
         padding-bottom: 30px;
+    }
+
+    h1 {
+        font-size: 9vw;
+    }
+    h2 {
+        font-size: 5vw;
+    }
+
+    #navbar {
+        display: none;
     }
    
 }
