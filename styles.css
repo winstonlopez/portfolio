@@ -32,7 +32,7 @@ main {
 
 #projects {
     width: 100%;
-    background-color: rgb(118, 134, 189);
+    background-color: rgb(255, 255, 255);
     position: relative;
 }
 
@@ -70,6 +70,7 @@ h2 {
     padding: 0;
     color: red;
     font-style: italic;
+    font-weight: lighter;
 }
 
 #project-header {
@@ -107,6 +108,14 @@ h2 {
     box-shadow: 0 5px 10px black;
 }
 
+#small-menu {
+    height: 100%;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 
 @media (min-width: 1200px) {
 
@@ -123,6 +132,10 @@ h2 {
 
     h1 {
         font-size: 5vw;
+    }
+
+    #small-menu {
+        display: none;
     }
 }
 
@@ -145,13 +158,17 @@ h2 {
     h1 {
         font-size: 6vw;
     }
+
+    #small-menu {
+        display: none;
+    }
    
 }
 
 @media (max-width: 799px){
 
     .project {
-        width: 90%;
+        width: 100%;
         aspect-ratio: 1;
         border: 1px solid gray;
         border-radius: 10px;
@@ -177,6 +194,14 @@ h2 {
         display: none;
     }
    
+    #container {
+        padding: 0;
+    }
+
+    .project:hover {
+        transform: none;
+        box-shadow: 0;
+    }
 }
 
 a {
@@ -223,7 +248,7 @@ a {
 .description p {
     margin: 0;
     padding: 0;
-    font-size: 100%;
+    font-size: 80%;
 }
 .project-title {
     text-align: center;
@@ -231,3 +256,4 @@ a {
     font-size: 150%;
     font-style: normal;
 }
+
