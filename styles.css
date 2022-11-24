@@ -58,7 +58,7 @@ main {
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    color: ghostwhite;
+    
 }
 
 h1 {
@@ -123,7 +123,7 @@ h2 {
 a {
     font-style: normal;
     text-decoration: none;
-    color: ghostwhite;
+    color: inherit;
 }
 
 .title {
@@ -173,7 +173,21 @@ a {
     font-style: normal;
 }
 
+.navContainer {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F2F2F2;
+    transition: background-color .5s;
+}
 
+.navContainer:hover {
+    cursor: pointer;
+    background-color: #F2F2F2;
+    color: black;
+}
 
 
 @media (min-width: 1200px) {
@@ -259,6 +273,6 @@ a {
 
     .project:hover {
         transform: none;
-        box-shadow: 0;
+        
     }
 }
