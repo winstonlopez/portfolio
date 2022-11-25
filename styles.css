@@ -244,8 +244,19 @@ footer {
     left: 0px;
     transition: 1s;
 }
+#small-screen-menu ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+}
 #small-screen-menu li {
     list-style: none;
+    font-size: 25px;
+    font-weight: bold;
 }
 @media (min-width: 1200px) {
 
@@ -272,7 +283,7 @@ footer {
     }
 }
 
-@media (min-width: 800px) and (max-width: 1199px){
+@media (min-width: 500px) and (max-width: 1199px){
 
     .project {
         width: 45%;
@@ -300,7 +311,7 @@ footer {
     }
 }
 
-@media (max-width: 799px){
+@media (max-width: 499px){
 
     .project {
         width: 100%;
